@@ -1,0 +1,354 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    background-image: linear-gradient(black, rgba(0, 0, 0, 0.2));
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+h2 {
+    padding-left: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.userpanel {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.search-container input[type="text"] {
+    padding: 5px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-container .search-button {
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-container .search-button:hover {
+    background-color: #666;
+}
+
+.notification-icon {
+    width: 2rem;
+}
+
+.user-image {
+    width: 2rem;
+    border-radius: 50%;
+}
+
+.section {
+    padding: 0;
+}
+
+.popular-now {
+    position: relative;
+    height: 400px;
+    background: url('popularnowthumb.jpg') no-repeat center center/cover;
+    transition: background 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.popular-now:hover {
+    background: url('popularnowthumb.gif') no-repeat center center/cover;
+}
+
+.popular-now h1 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.popular-now .show-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.popular-now .show-info {
+    margin-bottom: 20px;
+    font-size: 1em;
+    max-width: 600px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.button.play {
+    background-color: #ffffff;
+    color: black;
+}
+
+.button.play:hover {
+    background-color: #b9b9b9;
+}
+
+.button.more-info {
+    background-color: rgba(109, 109, 110, 0.7);
+}
+
+.button.more-info:hover {
+    opacity: 0.7;
+}
+
+.button .icon {
+    margin-right: 10px;
+}
+
+.shadowed-text {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+/*
+  LİSTELER!!!!
+*/
+
+
+.gallery-container {
+    padding-left: 20px;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .gallery {
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  .movie {
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .movie img {
+    width: 200px; /* Set your desired width */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .movie:hover img {
+    transform: scale(1.1);
+  }
+  
+  .title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .movie:hover .title {
+    opacity: 1;
+  }
+
+  ::-webkit-scrollbar {
+    width: 12px; /* You can adjust the width as needed */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #333; /* Darker color for the scrollbar track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #666; /* Darker color for the scrollbar thumb */
+  }
+  
+
+/*
+  LİSTELER BİTTİ
+*/
+
+/* TOP 10 LİSTESİ! */
+
+ /* Gallery container */
+ .top10-gallery {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  /* Individual gallery items */
+  .top10-gallery-item {
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    position: relative; /* Ensures position:absolute works */
+  }
+
+  /* Image styling */
+  .top10-gallery-item img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Numbering */
+  .top10-gallery-item .number {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+/* top 10 listesi bitti */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 50px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover {
+    opacity: 1;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        gap: 15px;
+        font-size: 0.875rem; /* 14px */
+    }
+
+    .buttons .button {
+        font-size: 0.875rem; /* 14px */
+    }
+
+    .popular-now .show-info {
+        max-width: 100%;
+    }
+
+    .search-container {
+        flex-direction: column;
+        gap: 1 rem;
+    }
+
+    .search-container input[type="text"], .search-container .search-button {
+        width: 100%;
+    }
+
+    .box {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+}
+
+@media screen and (max-width: 480px) {
+    nav ul {
+        gap: 10px;
+        font-size: 0.75rem; /* 12px */
+    }
+
+    .buttons .button {
+        font-size: 0.75rem; /* 12px */
+    }
+
+    .popular-now {
+        height: 300px;
+        padding: 0 10px;
+    }
+
+    .popular-now h1 {
+        font-size: 1.5em;
+    }
+
+    .popular-now .show-title {
+        font-size: 1.25em;
+    }
+
+    .popular-now .show-info {
+        font-size: 0.875em;
+    }
+}
